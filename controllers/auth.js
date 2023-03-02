@@ -33,7 +33,7 @@ const login = async (req, res) => {
     }
 
 
-    //then (To check if password is correct with token)
+    // then (To check if password is correct with token)
     const token = user.createJWT()
     res.status(StatusCodes.OK).json({user: { name: user.name }, token})
 
