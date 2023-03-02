@@ -25,6 +25,7 @@ const notFoundMiddleware = require('./middleware/not-found')
 const errorHandlerMiddlware = require('./middleware/error-handler')
 
 
+// extra security packages
 app.set('trust proxy', 1);
 app.use(
     rateLimiter({
@@ -37,6 +38,8 @@ app.use(helmet())
 app.use(cors())
 app.use(xss())
 
+
+// home page route
 app.get('/', (req,res) => {
     res.set('Job Vacancy API')
 })
