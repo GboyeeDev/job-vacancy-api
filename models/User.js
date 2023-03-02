@@ -13,7 +13,7 @@ const UserSchema = new mongoose.Schema({
     email: {
         type: String,
         required: [true, 'Provide your email address!'],
-        // classwork find advanced code writing for this match regex
+        // classwork: find advanced code writing for this match regex
         match: [
             /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
             'Please provide a valid email',
