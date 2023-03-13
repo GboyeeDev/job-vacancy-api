@@ -8,7 +8,7 @@ const getAllJobs = async (req, res) => {
     res.status(StatusCodes.OK).json({ jobs, count: jobs.length })
 }
 
-
+// Get
 const getJob = async (req, res) => {
     // this is to find which job exactly and which user exactly
     const { user: {userId}, params: { id: jobId }, } = req
