@@ -1,5 +1,6 @@
 require('dotenv').config()
 //express async error makes my app not to crash when I get errors
+// and also makes the custom errors
 require('express-async-errors')
 const express = require('express')
 const app = express()
